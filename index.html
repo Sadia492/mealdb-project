@@ -55,8 +55,15 @@
 
       <section class="w-4/5 mx-auto">
         <h2 class="text-center py-6 font-bold text-3xl">Your Favorite Food</h2>
+        <div
+          id="category-container"
+          class="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-6 mb-5"
+        ></div>
 
-        <div id="meals-container" class="grid grid-cols-2 gap-12"></div>
+        <div
+          id="meals-container"
+          class="grid grid-cols-1 lg:grid-cols-2 gap-12"
+        ></div>
         <div id="spinner" class="text-center hidden">
           <span class="loading loading-dots loading-lg"></span>
         </div>
@@ -64,6 +71,49 @@
           <button onclick="showAll()" class="btn btn-warning">Show All</button>
         </div>
       </section>
+
+      <div id="modal-container">
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn hidden" onclick="my_modal_5.showModal()">
+          open modal
+        </button>
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+            <form method="dialog">
+              <button
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              >
+                ✕
+              </button>
+            </form>
+            <h3 class="text-2xl border-b-2 pb-2 mb-2 font-bold">
+              Chicken Handi
+            </h3>
+            <img src="images/banner_1.png" alt="" />
+            <p class="py-2">
+              <span class="font-bold">Category : </span>Chicken
+            </p>
+            <p class="py-2"><span class="font-bold">Area : </span>Japanese</p>
+            <p class="py-2">
+              <span class="font-bold">Instructions : </span>AThere are many
+              variations of passages of Lorem Ipsum available, but the majority
+              have suffered alteration in some form, by injected humour, or
+              randomised words which don't look even slightly believable.
+            </p>
+            <p class="py-2">
+              <span class="font-bold">Youtube : </span
+              >https://www.youtube.com/watch?v=WnpbKoYhTEY
+            </p>
+
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </div>
     </main>
 
     <footer class="bg-base-200">
