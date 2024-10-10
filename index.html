@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="w-4/5 mx-auto py-12">
+      <nav class="flex justify-between">
+        <h2 class="text-3xl font-black">Tasty HUT</h2>
+        <div>
+          <button class="btn btn-warning">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mb-12">
+      <section
+        class="bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/banner_1.png')] brightness-70 bg-no-repeat bg-cover py-40 flex flex-col justify-center items-center space-y-6"
+      >
+        <h1 class="font-bold text-6xl text-white">
+          Taste Our Delicious Best Foods
+        </h1>
+        <p class="text-white">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected humou.
+        </p>
+        <div class="join">
+          <input
+            type="text"
+            placeholder="Search any food"
+            class="input input-bordered join-item"
+          />
+          <button class="btn btn-warning join-item">Search</button>
+        </div>
+      </section>
+
+      <section class="w-4/5 mx-auto">
+        <h2 class="text-center py-6 font-bold text-3xl">Your Favorite Food</h2>
+
+        <div class="grid grid-cols-2 gap-6">
+          <div class="flex gap-6">
+            <img src="images/Tasty_HUT.png" alt="" />
+            <div class="space-y-4 py-6">
+              <h4 class="text-2xl font-bold">Chicken Handi</h4>
+              <p class="font-medium text-gray-500">
+                There are many variations of passages of available, but the
+                majority have suffered
+              </p>
+              <button class="underline text-yellow-400">View Details</button>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-warning">Show All</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-base-200">
+      <div class="footer w-4/5 mx-auto justify-between text-base-content p-10">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered join-item"
+              />
+              <button class="btn btn-primary join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
